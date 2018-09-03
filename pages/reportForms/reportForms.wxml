@@ -1,0 +1,12 @@
+<view class='title'>
+  <view class='begin-icon'></view>
+  <text>请选择问卷查看数据</text>
+</view>
+<view class='questionaire' bindtap='exPavilion'>
+  <text>慕思体验馆产品及服务满意度调查表</text>
+  <view class='icon-more'></view>
+</view>
+<view class='questionaire' bindtap='hotel'>
+  <text>慕思酒店产品及服务满意度调查表</text>
+  <view class='icon-more'></view>
+</view>

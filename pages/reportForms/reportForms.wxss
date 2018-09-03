@@ -1,0 +1,44 @@
+page{
+  border-top: 1rpx solid grey;
+  background: #eee
+}
+.title{
+  text-align: center;
+  font-size: 39rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 30rpx;
+	letter-spacing: -1rpx;
+	color: #333333;
+  margin-bottom: 91rpx;
+}
+.title .begin-icon{
+   background: url(https://derucci.net/vip/imgs/begin-icon.png) no-repeat;
+   background-size: 100% 100%;
+   width: 138rpx;
+   height: 58rpx;
+   margin: 0 auto;
+   margin-top: 69rpx;
+   margin-bottom: 42rpx
+}
+.questionaire{
+  width: 690rpx;
+  height: 90rpx;
+  background-color: #fefefe;
+	border-radius: 20rpx;
+  margin-bottom: 10rpx;
+  font-size: 34rpx;
+	line-height: 90rpx;
+	letter-spacing: -r1px;
+	color: #050505;
+  padding: 0 20rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-around
+}
+.questionaire .icon-more{
+   background: url("https://derucci.net/vip/imgs/more.png") no-repeat;
+   background-size: 100% 100%;
+   width: 14rpx;
+   height: 23rpx;
+}

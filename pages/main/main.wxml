@@ -1,0 +1,11 @@
+<!--pages/main/main.wxml-->
+<view class='begin' bindtap='vipIn'>
+  <view class='vipVerify'> 
+    <view class='begin-plane'></view>
+    <text>慕思机场VIP后台验证</text>
+  </view>
+  <view class='reportForms' bindtap='reportFormsIn'>
+    <view class='begin-icon'></view>
+    <text>问卷调查数据报表</text>
+  </view>
+</view>
