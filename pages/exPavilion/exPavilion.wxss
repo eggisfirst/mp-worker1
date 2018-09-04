@@ -1,0 +1,90 @@
+page{
+  background: #eee
+}
+.navBar{
+  display: flex;
+  justify-content: space-between;
+  padding: 38rpx 30rpx 38rpx 30rpx;
+  box-sizing: border-box;
+  border-top:1px solid #ccc;
+  border-bottom: 1px solid #ccc 
+}
+  .navBar text{
+    font-size: 48rpx;
+    color: #333333;
+    font-weight: bold
+  }
+.time{
+  width:240rpx;
+  background-color: #e6e6e6;
+	border-radius: 4rpx;
+	opacity: 0.96;
+  text-align: center
+}
+  .time .topBar{
+    height: 68rpx;
+    font-size: 28rpx;
+    line-height: 48rpx;
+    color: #666666;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #fff;
+    position: relative
+  }
+  .time .topBar .calendar{
+    background: url("https://derucci.net/vip/imgs/calendar.png") no-repeat;
+    background-size: 100% 100%;
+    width: 32rpx;
+    height: 32rpx
+  }
+  .time .topBar .icon-more1{
+    background: url("https://derucci.net/vip/imgs/more1.png") no-repeat;
+    background-size: 100% 100%;
+    width: 32rpx;
+    height: 14rpx
+  }
+  .time .select{
+    font-size: 24rpx;
+    line-height: 50rpx;
+    color: #666666;
+    position: absolute;
+    z-index: 100;
+  }
+.display_show{
+  display: block;
+  border-bottom: 1px solid #fff;   
+  height: 51rpx;
+  opacity: 0.96;
+  width: 240rpx;
+}
+.display_none{
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.radio{
+  border: 1px solid red;
+  width: 50rpx;
+  height: 50rpx
+}
+.title{
+  width: 500rpx;
+  height: 500rpx;
+  border: 1px solid blue
+}
+.radio-group{
+  width: 100rpx;
+  height: 100rpx;
+  border: 1px solid red
+}

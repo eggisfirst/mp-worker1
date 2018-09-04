@@ -1,1 +1,30 @@
-<text>体验馆</text>
+<view class='navBar'>
+  <text>数据分析</text>
+ <view class="time">
+    <view class="topBar" bindtap="showitem">
+      <view class='calendar'></view>
+      <view class="body_head" >全部</view>
+      <view class='icon-more1' ></view>
+    </view>
+    <view class='select'>
+        <view class="{{open?'display_show':'display_none'}}" bindtap='selected'
+        style="background:{{color}}">一周</view>
+        <view class="{{open?'display_show':'display_none'}}" bindtap='selected'
+         style="background:{{color}}">月度</view>
+        <view class="{{open?'display_show':'display_none'}}" bindtap='selected'
+         style="background:{{color}}">季度</view>
+        <view class="{{open?'display_show':'display_none'}}" bindtap='selected'
+         style="background:{{color}}">年度</view>
+    </view>
+</view>
+  
+</view>
+<view class='title'>
+  <text>你认为本公司的枕头的舒适度如何？</text>
+  <radio-group class="radio-group" bindchange="radioChange">
+    <label class='radio' wx:for='{{k7}}' wx:key="index">
+      <radio value='{{item.arr_guige02}}' bindtap='radio' data-id='{{item.guige_key-2}} 
+      checked=' {{item.checked}} '>{{item.arr_guige02}}</radio>
+    </label>
+  </radio-group>
+</view>
