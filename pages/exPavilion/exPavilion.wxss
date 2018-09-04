@@ -1,5 +1,6 @@
 page {
   background: #f2f2f2;
+  box-sizing: border-box;
 }
 
 .navBar {
@@ -54,11 +55,12 @@ page {
 
 .selectTime {
   position: relative;
+  z-index: 100;
 }
 
 .select {
-  z-index: 100;
   position: absolute;
+  z-index: 100;
 }
 
 .select_one {
@@ -91,32 +93,88 @@ page {
 
 .content .question {
   line-height: 48rpx;
-  margin-bottom: 35rpx
+  margin-bottom: 35rpx;
 }
 
 .content .options {
-  display: flex;
-  justify-content: space-between;
-  line-height: 60rpx;
-  position: relative;
+  margin-top: 30rpx;
 }
 
-.content .option .line {
-  border-bottom: 1px solid #e1e1e1;
+.content .option {
   width: 720rpx;
-  box-sizing: border-box
+  height: 60rpx;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #e1e1e1;
 }
-.content .options .num {
+
+.content .options .percent {
+  margin-right: 30rpx;
+}
+
+.progress {
+  height: 10rpx;
+  background: #5ac8fa;
   position: absolute;
-  right: 0rpx;
-  top: 5rpx;
+  right: 0;
+  margin-top: -10rpx;
+  z-index: -1;
+}
+.first{
+  width:80%;
+  animation: move1 2s; 
+}
+.second{
+  width: 8%;
+  animation: move2 2s;
+}
+.third{
+  width: 2%;
+  animation: move3 2s;
+}
+.four{
+  width: 10%;
+  animation: move4 2s;
+}
+@keyframes move1 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 80%;
+  }
+}
+@keyframes move2 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 8%;
+  }
+}
+@keyframes move3 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 2%;
+  }
+}
+@keyframes move4 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 10%;
+  }
+}
+
+.footer{
   font-size: 28rpx;
-  color: #666;
-}
-.content .options .percent{
-  margin-bottom: 15rpx  
-}
-.progress{
-  border: 1px solid red;
- 
+	line-height: 48rpx;
+	color: #9e9e9e;
+	box-shadow: 0px 1rpx 0px 0px 
+		#ffffff;
+  margin: 60rpx auto;
+  text-align: center
 }

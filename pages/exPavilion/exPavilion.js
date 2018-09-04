@@ -7,6 +7,8 @@ Page({
       message1:'您认为本公司枕头的舒适度如何？'
     },{
       message1:"您认为本公司床垫的舒适度如何？"
+    },{
+      message1:"您认为本公司床上用品的舒适度如何？"
     }
     ],
     array2:[{
@@ -27,7 +29,9 @@ Page({
       message3:'2%'
     },{
       message3:'10%'
-    }]
+    }],
+    people:180,
+    animationData:{}
   },
   //点击选择类型，出现/隐藏
   showTime: function () {
@@ -57,7 +61,8 @@ Page({
     // 页面渲染完成
   },
   onShow: function () {
-    // 页面显示
+    // 
+  
   },
   onHide: function () {
     // 页面隐藏

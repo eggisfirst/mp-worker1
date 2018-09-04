@@ -1,1 +1,65 @@
-<text>酒店</text>
+<view class='navBar'>
+  <text>数据分析</text>
+  <view class='time'>
+    <view class="topBar" bindtap="showTime">
+      <view class='calendar'></view>
+      <view class="all">{{time}}</view>
+      <view class='icon-more1'></view>
+    </view>
+    <view class="selectTime">
+      <view class="select" hidden="{{select}}">
+        <view class="select_one {{num==1?'is_checked':'normal'}}" bindtap="mySelect" data-me="一周" data-num='1'>一周</view>
+        <view class="select_one {{num==2?'is_checked':'normal'}}" bindtap="mySelect" data-me="月度" data-num='2'>月度</view>
+        <view class="select_one {{num==3?'is_checked':'normal'}}" bindtap="mySelect" data-me="季度" data-num='3'>季度</view>
+        <view class="select_one {{num==4?'is_checked':'normal'}}" bindtap="mySelect" data-me="年度" data-num='4'>年度</view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class='content'>
+  <view wx:for="{{array1}}" class='question'>
+    {{index+1}}.{{item.message1}}
+    <view class='options'>
+      <view>
+        <view class='option num'>
+          非常满意
+          <text>80%</text>
+        </view>
+      </view>
+      <view>
+        <view class='progress first' style='width:80%'></view>
+      </view>
+      <view>
+        <view class='option num'>
+          满意
+          <text>8%</text>
+        </view>
+      </view>
+      <view>
+        <view class='progress second' style='width:8%'></view>
+      </view>
+      <view>
+        <view class='option num'>
+          太高或太矮
+          <text>2%</text>
+        </view>
+      </view>
+      <view>
+        <view class='progress third' style='width:2%'></view>
+      </view>
+      <view>
+        <view class='option num'>
+          太软或太硬
+          <text>10%</text>
+        </view>
+      </view>
+      <view>
+        <view class='progress four' style='width:10%'></view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class='footer'>
+  <text>此时间段内共有{{people}}人参与问卷调查</text>
+</view>

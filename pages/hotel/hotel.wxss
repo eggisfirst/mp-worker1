@@ -1,0 +1,181 @@
+page {
+  background: #f2f2f2;
+  box-sizing: border-box;
+}
+
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  padding: 38rpx 30rpx 38rpx 30rpx;
+  box-sizing: border-box;
+  border-top: 1px solid #e1e1e1;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.navBar text {
+  font-size: 48rpx;
+  color: #333;
+  font-weight: bold;
+}
+
+.time {
+  width: 240rpx;
+  background-color: #e6e6e6;
+  border-radius: 4rpx;
+  opacity: 0.96;
+  text-align: center;
+}
+
+.time .calendar {
+  background: url("https://derucci.net/vip/imgs/calendar.png") no-repeat;
+  background-size: 100% 100%;
+  width: 32rpx;
+  height: 32rpx;
+}
+
+.time .icon-more1 {
+  background: url("https://derucci.net/vip/imgs/more1.png") no-repeat;
+  background-size: 100% 100%;
+  width: 32rpx;
+  height: 14rpx;
+}
+
+.time .topBar {
+  position: relative;
+  justify-content: space-around;
+  background: #fff;
+  width: 240rpx;
+  height: 68rpx;
+  border-radius: 4rpx;
+  font-size: 28rpx;
+  color: #666;
+  display: flex;
+  align-items: center;
+}
+
+.selectTime {
+  position: relative;
+  z-index: 100;
+}
+
+.select {
+  position: absolute;
+  z-index: 100;
+}
+
+.select_one {
+  text-align: center;
+  background-color: #e1e1e1;
+  width: 240rpx;
+  height: 51rpx;
+  border-bottom: 1rpx solid #fff;
+  opacity: 0.96;
+  font-size: 24rpx;
+  line-height: 51rpx;
+  color: #666;
+}
+
+.is_checked {
+  background: #fff;
+}
+
+.normal {
+  background: #e1e1e1;
+}
+
+.content {
+  width: 720rpx;
+  margin-left: 30rpx;
+  margin-top: 50rpx;
+  font-size: 28rpx;
+  color: #333;
+}
+
+.content .question {
+  line-height: 48rpx;
+  margin-bottom: 35rpx;
+}
+
+.content .options {
+  margin-top: 30rpx;
+}
+
+.content .option {
+  width: 720rpx;
+  height: 60rpx;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.content .options .percent {
+  margin-right: 30rpx;
+}
+
+.progress {
+  height: 10rpx;
+  background: #5ac8fa;
+  position: absolute;
+  right: 0;
+  margin-top: -10rpx;
+  
+  z-index: -1;
+}
+.first{
+  animation: move1 2s; 
+}
+.second{
+  animation: move2 2s;
+}
+.third{
+  animation: move3 2s;
+}
+.four{
+  animation: move4 2s;
+}
+@keyframes move1 {
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 80%;
+  }
+}
+@keyframes move2 {
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 8%;
+  }
+}
+@keyframes move3 {
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 2%;
+  }
+}
+@keyframes move4 {
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 10%;
+  }
+}
+
+.footer{
+  font-size: 28rpx;
+	line-height: 48rpx;
+	color: #9e9e9e;
+	box-shadow: 0px 1rpx 0px 0px 
+		#ffffff;
+  margin: 60rpx auto;
+  text-align: center
+}

@@ -13,9 +13,9 @@
         bindtap="mySelect" data-me="一周" data-num='1'>一周</view>
         <view class="select_one {{num==2?'is_checked':'normal'}}"
          bindtap="mySelect" data-me="月度" data-num='2'>月度</view>
-        <view class="select_one  {{num==3?'is_checked':'normal'}}" 
+        <view class="select_one {{num==3?'is_checked':'normal'}}" 
         bindtap="mySelect" data-me="季度" data-num='3'>季度</view>
-        <view class="select_one  {{num==4?'is_checked':'normal'}}" 
+        <view class="select_one {{num==4?'is_checked':'normal'}}" 
         bindtap="mySelect" data-me="年度" data-num='4'>年度</view>
       </view>
     </view>
@@ -26,21 +26,45 @@
   <view wx:for="{{array1}}" class='question'>
     {{index+1}}.{{item.message1}}
       <view class='options'>
-        <view class='option'>
-          <view wx:for="{{array2}}" class='line'>
-          {{item.message2}}
-          <view class='progress'>
-           <progress percent='80' color='#5ac8fa' active='false' class='b' 
-           backgroundColor='transparent'></progress>
+        <view>
+          <view class='option num'>
+          非常满意 
+          <text>80%</text> 
           </view>
         </view>
-        <view class='num'>
-         <view wx:for="{{array3}}" class='percent'>
-           {{item.message3}}
-           </view>
-           
-        </view>  
+        <view>
+         <view class='progress first'></view>
+        </view>
+          <view>
+          <view class='option num'>
+          满意 
+          <text>8%</text> 
+          </view>
+        </view>
+        <view>
+         <view class='progress second'></view>
+        </view>
+          <view>
+          <view class='option num'>
+          太高或太矮 
+          <text>2%</text> 
+          </view>
+        </view>
+        <view>
+         <view class='progress third' ></view>
+        </view>
+          <view>
+          <view class='option num'>
+          太软或太硬
+          <text>10%</text> 
+          </view>
+        </view>
+        <view>
+         <view class='progress four' ></view>
         </view>
       </view>
   </view>
+</view>
+<view class='footer'>
+    <text>此时间段内共有{{people}}人参与问卷调查</text>
 </view>
