@@ -1,30 +1,46 @@
+
 <view class='navBar'>
   <text>数据分析</text>
- <view class="time">
-    <view class="topBar" bindtap="showitem">
+  <view class='time'>
+    <view class="topBar" bindtap="showTime">
       <view class='calendar'></view>
-      <view class="body_head" >全部</view>
-      <view class='icon-more1' ></view>
+      <view class="all">{{time}}</view>
+      <view class='icon-more1'></view>
     </view>
-    <view class='select'>
-        <view class="{{open?'display_show':'display_none'}}" bindtap='selected'
-        style="background:{{color}}">一周</view>
-        <view class="{{open?'display_show':'display_none'}}" bindtap='selected'
-         style="background:{{color}}">月度</view>
-        <view class="{{open?'display_show':'display_none'}}" bindtap='selected'
-         style="background:{{color}}">季度</view>
-        <view class="{{open?'display_show':'display_none'}}" bindtap='selected'
-         style="background:{{color}}">年度</view>
+    <view class="selectTime">
+      <view class="select" hidden="{{select}}">
+        <view class="select_one {{num==1?'is_checked':'normal'}}" 
+        bindtap="mySelect" data-me="一周" data-num='1'>一周</view>
+        <view class="select_one {{num==2?'is_checked':'normal'}}"
+         bindtap="mySelect" data-me="月度" data-num='2'>月度</view>
+        <view class="select_one  {{num==3?'is_checked':'normal'}}" 
+        bindtap="mySelect" data-me="季度" data-num='3'>季度</view>
+        <view class="select_one  {{num==4?'is_checked':'normal'}}" 
+        bindtap="mySelect" data-me="年度" data-num='4'>年度</view>
+      </view>
     </view>
+  </view>
 </view>
-  
-</view>
-<view class='title'>
-  <text>你认为本公司的枕头的舒适度如何？</text>
-  <radio-group class="radio-group" bindchange="radioChange">
-    <label class='radio' wx:for='{{k7}}' wx:key="index">
-      <radio value='{{item.arr_guige02}}' bindtap='radio' data-id='{{item.guige_key-2}} 
-      checked=' {{item.checked}} '>{{item.arr_guige02}}</radio>
-    </label>
-  </radio-group>
+
+<view class='content'>
+  <view wx:for="{{array1}}" class='question'>
+    {{index+1}}.{{item.message1}}
+      <view class='options'>
+        <view class='option'>
+          <view wx:for="{{array2}}" class='line'>
+          {{item.message2}}
+          <view class='progress'>
+           <progress percent='80' color='#5ac8fa' active='false' class='b' 
+           backgroundColor='transparent'></progress>
+          </view>
+        </view>
+        <view class='num'>
+         <view wx:for="{{array3}}" class='percent'>
+           {{item.message3}}
+           </view>
+           
+        </view>  
+        </view>
+      </view>
+  </view>
 </view>
