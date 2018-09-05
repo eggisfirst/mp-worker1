@@ -16,5 +16,5 @@ Page({
     wx.navigateTo({
       url: `../../pages/hotel/hotel`
     })
-  }
+  },
 })

@@ -122,16 +122,16 @@ page {
   z-index: -1;
 }
 .first{
-  animation: move1 2s; 
+  animation: move1 1s; 
 }
 .second{
-  animation: move2 2s;
+  animation: move2 1s;
 }
 .third{
-  animation: move3 2s;
+  animation: move3 1s;
 }
 .four{
-  animation: move4 2s;
+  animation: move4 1s;
 }
 @keyframes move1 {
   from {

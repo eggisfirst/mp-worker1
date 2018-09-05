@@ -1,5 +1,5 @@
 page{
-  border-top: 1rpx solid grey;
+  border-top: 1rpx solid #e1e1e1;
   background: #eee
 }
 .title{
